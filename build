@@ -1,0 +1,13 @@
+#!/bin/bash
+
+gcc Puissance4.c main.c -o main
+
+if [ $? = 0 ]
+then
+	echo "COMPILATION FINISHED"
+	exit 0 # Tout va bien.
+else
+	echo "ERROR IN COMPILATION"
+	exit 1 # Retourne un code erreur.
+fi
+
